@@ -10,17 +10,21 @@ public class Animal : MonoBehaviour {
     //Health
     public int health = 100;
     //Speed
-    public float speed = 0.0f;
+    public float speed = 7f;
     //Size
     public string size = "Big";
-    public bool canEat = false;
-
+  
     public Color basecolor;
 
     //FUNCTIONS (things they do)
     //Breathe
     //Reproduce
     //Eat
+    public bool canEat = false;
+
+    //Move
+    //Die
+    //Grow
     void Start()
     {
         if (canEat)
@@ -37,16 +41,27 @@ public class Animal : MonoBehaviour {
             print(7);
         }
 
-        if(AnimalName == "Jen")
+        if (AnimalName == "Jen")
         {
-            print("Jen"); 
+            print("Jen");
+        }
+
+        if (speed > 0f)
+        {
+            speed %= 2f;
+        }
+
+        if (health > 0)
+        {
+            health %= 2;
+            print(health);
+        }
+        else
+        {
+            //print("Error");
+            Debug.LogError("You can't divide by zero");
         }
 
     }
-    //Move
-    //Die
-    //Grow
 
-
-
-}
+    }
