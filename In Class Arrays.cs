@@ -20,3 +20,8 @@ namespace ConsoleApplication3
     }
 }
 //debug.log(where it reports to
+// i = #0
+// Player Number (array number) is named (gives array number name)
+//play.length is the number of things stored in the array
+// so long as the amount of things stored in the array is higher than the int; it will print until it hits that number.
+//i++ is # +1
