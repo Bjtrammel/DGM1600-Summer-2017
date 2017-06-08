@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Linq;
 
 public class Else : MonoBehaviour
 //If statement: checks if a block of code is true or false. If it is true, it will run a block of code.If it is false, it will do nothing.
@@ -10,7 +11,7 @@ public class Else : MonoBehaviour
     public bool mountClicked = true;
     public int a = 5;
     public int b = 10;
-    public string TONY = (string)Console.Read();
+    public string myString = "TONY";
 
     void Start()
     {
@@ -22,6 +23,7 @@ public class Else : MonoBehaviour
         {
             print("You are not prepared!");
         }
+        //Regular if-else statement. Because mountClicked is set to true, the top line is printed.
 
         if (a < 6)
             if (b < 11)
@@ -32,6 +34,7 @@ public class Else : MonoBehaviour
             {
                 print("The Top one Isn't true, Genious.");
             }
+        //using two ints to create an if with a nested if else statement. Because 6 is greater than a, the statement is true and it would print the top line.
 
         if (a > 9)
         {
@@ -42,8 +45,9 @@ public class Else : MonoBehaviour
         {
             print(">(o)__ /)");
         }
+        //using one int with if-else statment with a nested if.
 
-        if (string.IsUpper(TONY))
+        if (myString.Any(char.IsUpper))
         {
             print("Tony is in upper case");
         }
@@ -51,6 +55,7 @@ public class Else : MonoBehaviour
         {
             print("Tony is in lower case");
         }
+        //
 
         if (a > 9)
         {
@@ -64,5 +69,6 @@ public class Else : MonoBehaviour
         {
             print("Ƹ̵̡Ӝ̵̨̄Ʒ");
         }
+        //an if-else if-else created based off of the 
     }
    }
