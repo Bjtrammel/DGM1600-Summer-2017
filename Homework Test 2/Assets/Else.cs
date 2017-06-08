@@ -55,7 +55,7 @@ public class Else : MonoBehaviour
         {
             print("Tony is in lower case");
         }
-        //
+        //The any is creating a loop that goes through the Tony string, and to determine if the statement is true or false.
 
         if (a > 9)
         {
