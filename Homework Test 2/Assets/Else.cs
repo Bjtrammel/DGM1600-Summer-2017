@@ -49,13 +49,14 @@ public class Else : MonoBehaviour
 
         if (myString.Any(char.IsUpper))
         {
-            print("Tony is in upper case");
+            print("Tony humble brags about his dps");
         }
         else
         {
-            print("Tony is in lower case");
+            print("Tony does actually ahve good dps");
         }
-        //The any is creating a loop that goes through the Tony string, and to determine if the statement is true or false.
+        //Any(condition) is used to determine if the condition is met. myString = "TONY" would meet this criteria.
+        //char.IsUpper will check every character in the string and check if they are upper case, to determine if the statement is true or false. 
 
         if (a > 9)
         {
@@ -69,6 +70,6 @@ public class Else : MonoBehaviour
         {
             print("Ƹ̵̡Ӝ̵̨̄Ʒ");
         }
-        //an if-else if-else created based off of the 
+        //An if-else if-else created based off of the number for var a. Since the if and the else if are false then the else statement will print. 
     }
-   }
+}
