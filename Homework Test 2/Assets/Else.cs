@@ -53,10 +53,9 @@ public class Else : MonoBehaviour
 
         if (a > 9)
         {
-            if (a > 11)
-                print("<('_')✓");
+            print("<('_')✓");
         }
-        else
+        else if (a > 11)
         {
             print(">(o)__ /)");
         }
