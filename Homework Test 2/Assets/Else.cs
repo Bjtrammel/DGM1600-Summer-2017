@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class Else : MonoBehaviour
-
+//If statement: checks if a block of code is true or false. If it is true, it will run a block of code.If it is false, it will do nothing.
+//Else: if it can do the default, it will do the default, if it can’t, it will do the else.
 //site used for reference: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/if-else
 
 {
