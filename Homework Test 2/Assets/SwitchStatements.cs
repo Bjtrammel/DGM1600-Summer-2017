@@ -5,39 +5,39 @@ public class SwitchStatements : MonoBehaviour
 {
    public void start()
     {
-        string SwitchStatements = "Lavender"; //whatever number the int is set to, is what case it will read. If the int isn't set, the deafult case will read.
+        string SwitchStatements = "Lavender"; //whatever the string is set to, is what case it will read. If the string isn't set, the deafult case will read.
 
         switch (SwitchStatements) 
         {
-            case "Lavender":
-                print("Case 1");
+            case "Lavender": //the name for the specific cae. 
+                print("You picked a Lavender); 
                 break; //ends the case so that you're not running through a loop
             case "Tulip":
-                print("Case 2");
+                print("You picked a Tulip");
                 break;
             case "Hyacinth":
-                print("Case 3");
+                print("You picked a Hyacinth");
                 break;
             case "Pinkcat":
-                print("Case 4");
+                print("You picked a Pinkcat");
                 break;
             case "Pansy":
-                print("Case 5");
+                print("You picked a Pansy");
                 break;
             case "Sunflower":
-                print("Case 6");
+                print("You picked a Sunflower");
                 break;
             case "Lily":
-                print("Case 7");
+                print("You picked a Lily");
                 break;
             case "Monrning Glory":
-                print("Case 8");
+                print("You picked a Morning Glory");
                 break;
             case "Rose":
-                print("Case 9");
+                print("You picked a Rose");
                 break;
             default:
-                print("Default case");
+                print("You picked a flower");
                 break;
         }
     }
