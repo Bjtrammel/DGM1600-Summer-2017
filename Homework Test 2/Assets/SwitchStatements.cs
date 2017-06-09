@@ -3,14 +3,14 @@ using System.Collections;
 
 public class SwitchStatements : MonoBehaviour
 {
-   public void start()
+    public void start()
     {
         string SwitchStatements = "Lavender"; //whatever the string is set to, is what case it will read. If the string isn't set, the deafult case will read.
 
-        switch (SwitchStatements) 
+        switch (SwitchStatements)
         {
             case "Lavender": //the name for the specific cae. 
-                print("You picked a Lavender); 
+                print("You picked a Lavender");
                 break; //ends the case so that you're not running through a loop
             case "Tulip":
                 print("You picked a Tulip");
