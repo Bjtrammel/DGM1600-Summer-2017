@@ -32,9 +32,9 @@ public class WhileLoop : MonoBehaviour
         while (a++ > b)
         {
             print(a + "Bottles");
-            else{
-                print("Dummy");
-            }
         }
+        else{
+            print("Dummy");
+        }
+        //Attempted to create a while-else loop. 
     }
-}
