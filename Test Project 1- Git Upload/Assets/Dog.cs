@@ -7,7 +7,8 @@ public class Dog : MammalsWithLegs
     //PROPERTIES
     //HowManyLegs Overrides (4)
     //Mans Best Friend
-    public string DogisFriendly  = "Unfriendly";
+    public string DogisFriendly  = "friendly";
+    public int Friendliness = 100;
 
     //FUNCTIONS
     //Bark
@@ -15,22 +16,15 @@ public class Dog : MammalsWithLegs
     //
     void Start()
     {
-        if (canEat)
+        if (canEat && Friendliness == 100)
         {
-            print(this.name + " is hungry!");
-        }
-        else
-        {
-            print(this.name + " isn't hungry!");
+            print(this.name + " begs for a treat");
         }
 
-        if ( 2+ 2 == 4)
+
+        if (canEat || Friendliness <= 50)
         {
-            print("Dog has 4 legs.");
-        }
-        if (DogisFriendly == "Unfriendly")
-        {
-            print("This dog is unfriendly");
+            print(this.name + " wants a treat");
         }
     }
 }
