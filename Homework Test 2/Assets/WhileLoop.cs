@@ -3,8 +3,6 @@ using System.Collections;
 
 public class WhileLoop : MonoBehaviour
 {
-
-
     void Start()
     {
         int a = 5; //set your int
@@ -29,12 +27,13 @@ public class WhileLoop : MonoBehaviour
             print(a + "bottles on the wall");
         }
 
-        while (a++ > b)
-        {
-            print(a + "Bottles");
-        }
-        else{
-            print("Dummy");
-        }
+        //while (a++ > b)
+        // {
+        //     print(a + "Bottles");
+        // }
+        // else{
+        //     print("Dummy");
+        // }
         //Attempted to create a while-else loop. 
     }
+}
