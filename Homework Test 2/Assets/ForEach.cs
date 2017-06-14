@@ -57,6 +57,6 @@ public class ForEach : MonoBehaviour {
         foreach (string evolution in evolutions)  
         {
             print(evolution);
-        }
+        } //prints the new array
     }
 }
