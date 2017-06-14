@@ -13,7 +13,24 @@ public class ForLoop : MonoBehaviour {
 
         for (int a = 10; a > 5; a--)
         {
-            print("Subtraction");
+            print("Subtraction " + a);
         }
+
+        for (char c = 'c'; c < 'h'; c++)
+        {
+            print(c);
+        }
+
+        for (char c = 'c'; c < 'h'; c--)
+        {
+            print(c);
+        }
+       //learned that this will count backwards from c through ASCII characters to get to h
+
+        for (char c = 'c'; c > 'H'; c--)
+        {
+            print(c);
+        }
+        //fixed the example above to run straight through backwards c to H.
     }
 }
