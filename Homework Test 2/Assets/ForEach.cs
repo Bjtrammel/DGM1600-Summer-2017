@@ -3,12 +3,11 @@ using System.Collections;
 
 public class ForEach : MonoBehaviour {
 
-	// Use this for initialization
-	void Start ()
-    {
+    public string[] pokemon = { "Vaporeon", "Jolteon", "Flareon", "Espeon", "Umbreon", "Leafeon", "Glaceon", "Eevee" };
+    string[] evolutions = new string[7];
 
-        string[] pokemon = { "Vaporeon", "Jolteon", "Flareon", "Espeon", "Umbreon", "Leafeon", "Glaceon", "Eevee" };
-        string[] evolutions = new string[7];
+    void Start ()
+    {
 
         foreach (string eevee in pokemon)
         {
@@ -58,5 +57,31 @@ public class ForEach : MonoBehaviour {
         {
             print(evolution);
         } //prints the new array
+
+        foreach (string change in pokemon)
+        {
+            if (change != "Eevee")
+            {
+                print(change + " It's genetic code has been mutated due to radiation exposure from element STONE.");
+            }
+            else
+            {
+                print("Eevee: Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs.");
+            }
+
+        foreach (string eevee in pokemon)
+            {
+                if(eevee == "Eevee")
+                {
+                    print(eevee);
+                }
+            }
+
+            foreach (string eevee in pokemon)
+            {
+                print(eevee.Length + eevee);
+                break;
+            }
+        }
     }
 }
