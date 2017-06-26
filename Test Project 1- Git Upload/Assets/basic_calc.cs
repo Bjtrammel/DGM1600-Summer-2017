@@ -12,9 +12,24 @@ public class basic_calc : MonoBehaviour {
         int num = int.Parse(In1.text) + int.Parse(In2.text);
         result.text = num.ToString();
     }
+    //public void SubClick()
+    //{
+    //    int num = int.Parse(In1.text) + int.Parse(In2.text);
+    //    result.text = num.ToString();
+    //}
+    //public void MulClick()
+    //{
+    //    int num = int.Parse(In1.text) + int.Parse(In2.text);
+    //    result.text = num.ToString();
+    //}
+    //public void DevideClick()
+    //{
+    //    int num = int.Parse(In1.text) + int.Parse(In2.text);
+    //    result.text = num.ToString();
+    //}
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 	
 	}
 	
