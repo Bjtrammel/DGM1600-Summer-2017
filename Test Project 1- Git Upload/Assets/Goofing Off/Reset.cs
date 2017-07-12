@@ -15,14 +15,13 @@ public class Reset : MonoBehaviour
     //    }
     //}
 
-    public Transform spawnPoint;
+    ////public Transform spawnPoint;
 
-    public OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.name == "Player")
-        {
-            other.transform.position = spawnPoint.position;
-            yield return new WaitForSecondsRealtime(3);
-        }
-    }
+    ////public OnCollisionEnter(Collision other)
+    ////{
+    ////    if (other.gameObject.name == "Player")
+    ////    {
+    ////        other.transform.position = spawnPoint.position;
+    ////    }
+    ////}
 }
