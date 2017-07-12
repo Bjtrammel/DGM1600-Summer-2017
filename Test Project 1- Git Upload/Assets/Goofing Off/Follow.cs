@@ -6,10 +6,12 @@ public class Follow : MonoBehaviour {
     public Rigidbody enemy;
     public float moveSpeed;
     public Transform target;
-	
-	// Update is called once per frame
-	void Update () {
-        transform.LookAt(target);
-        transform.Translate(Vector3.forward*moveSpeed*Time.deltaTime);
-	}
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.name == "Player") {
+            transform.LookAt(target);
+            transform.Translate(Vector3.forward * -moveSpeed * Time.deltaTime);
+        }
+    }
 }
