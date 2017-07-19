@@ -9,7 +9,7 @@ public class Reset : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
-            other.transform.position = spawnPoint.position;
+            transform.position = spawnPoint.position;
         }
     }
 }
