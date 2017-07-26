@@ -2,20 +2,11 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class playerHealth : MonoBehaviour
+public class wolfHealth : MonoBehaviour
 {
 
     public const int maxHealth = 100;
     public int currentHealth = maxHealth;
-
-    public Text hp;
-    public Text maxHp;
-
-    void Update()
-    {
-        hp.text = currentHealth.ToString();
-        maxHp.text = maxHealth.ToString();
-    }
 
     public void TakeDamage(int amount)
     {
@@ -23,8 +14,8 @@ public class playerHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             currentHealth = 0;
-            print("You're Dead! Game Over!");
+            print("The Wolf is Dead! Good Job!");
         }
-            
+
     }
 }
