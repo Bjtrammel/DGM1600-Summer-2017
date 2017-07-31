@@ -5,33 +5,39 @@ public class Coroutine : MonoBehaviour
 {
 
 
-    public float smoothing = 1f;
-    public Transform target;
-    public Transform start;
+    public int counter;
+    public int maxNumber;
+
+    public int ammo;
 
     void Start()
     {
-        StartCoroutine(MyCoroutine(target));
+        StartCoroutine(ammoLoad());
+        StartCoroutine(Health());
     }
 
-    IEnumerator MyCoroutine(Transform target)
+    IEnumerator Health()
     {
-        while (Vector3.Distance(transform.position, target.position) > 0.05f)
+        while (counter < maxNumber)
         {
-            transform.position = Vector3.Lerp(transform.position, target.position, smoothing * Time.deltaTime);
+            yield return new WaitForSeconds(3);
+            print("Health at " + counter + ".");
+            counter++;
 
-            yield return null;
         }
 
-        print("Reached the Target.");
+        //print("First Action");
+        //yield return new WaitForSeconds(5);
+        //print("Second Action");
+    }
 
-        yield return new WaitForSeconds(5f);
-
-        print("MyCoroutine is now finished.");
-
-        //private void OnTriggerStay(Collider other)
-        //{
-        //    StartCoroutine
-        //}
+    IEnumerator ammoLoad()
+    {
+        while (ammo < 15)
+        {
+            yield return new WaitForSeconds(2);
+            print("Ammo ammount " + ammo + ".");
+            ammo++;
+        }
     }
 }
