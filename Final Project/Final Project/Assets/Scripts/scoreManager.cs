@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class scoreManager : MonoBehaviour {
 
     public static int score;
     public Text text;
+    public int winScore;
 
 	void Start () {
         text = GetComponent<Text>();
@@ -13,9 +15,14 @@ public class scoreManager : MonoBehaviour {
 	}
 	
 	void Update () {
-        if (score < 0)
+        if (score < 0) {
             score = 0;
+        }
 
+        if(score >= winScore)
+        {
+            SceneManager.LoadScene(2);
+        }
         text.text = " " + score;
 	}
 

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class wolfHealth : MonoBehaviour
@@ -22,13 +23,12 @@ public class wolfHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             currentHealth = 0;
-            print("The Wolf is Dead! Good Job!");
             scoreManager.AddPoints(points); //add point for kill and respawn
             transform.position = spawnPoint.position;
             transform.rotation = spawnPoint.rotation;
             //reset health
             currentHealth = maxHealth;
-        }
+         }
 
     }
 }

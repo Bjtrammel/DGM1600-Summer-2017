@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class playerHealth : MonoBehaviour
@@ -23,7 +24,7 @@ public class playerHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             currentHealth = 0;
-            print("You're Dead! Game Over!");
+            SceneManager.LoadScene(3); ;
         }
             
     }
