@@ -12,10 +12,10 @@ public class wolfHealth : MonoBehaviour
     public int points;
     public Transform spawnPoint;
 
-    void Update()
-    {
-        hpWolf.text = currentHealth.ToString();
-    }
+    //void Update()
+    //{
+    //    hpWolf.text = currentHealth.ToString();
+    //}
 
     public void TakeDamage(int amount)
     {

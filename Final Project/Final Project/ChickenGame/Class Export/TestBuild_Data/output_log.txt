@@ -1,0 +1,33 @@
+Mono path[0] = 'C:/Users/10798648/Documents/Summer2017/Final Project/Final Project/ChickenGame/Class Export/TestBuild_Data/Managed'
+Mono path[1] = 'C:/Users/10798648/Documents/Summer2017/Final Project/Final Project/ChickenGame/Class Export/TestBuild_Data/Mono'
+Mono config path = 'C:/Users/10798648/Documents/Summer2017/Final Project/Final Project/ChickenGame/Class Export/TestBuild_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/10798648/Documents/Summer2017/Final Project/Final Project/ChickenGame/Class Export/TestBuild_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55064
+Multi-casting "[IP] 161.28.108.47 [Port] 55064 [Flags] 3 [Guid] 1124128769 [EditorId] 1870832040 [Version] 1048832 [Id] WindowsPlayer(CS514-20) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [161.28.108.47:55064]...
+PlayerConnection accepted from [161.28.108.47] handle:0x26c
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56769
+PlayerConnection already initialized - listening to [161.28.108.47:55064]
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA Quadro K2000 (ID=0xffe)
+    Vendor:   NVIDIA
+    VRAM:     1990 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\10798648\Documents\Summer2017\Final Project\Final Project\ChickenGame\Class Export\TestBuild_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\10798648\Documents\Summer2017\Final Project\Final Project\ChickenGame\Class Export\TestBuild_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\10798648\Documents\Summer2017\Final Project\Final Project\ChickenGame\Class Export\TestBuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\10798648\Documents\Summer2017\Final Project\Final Project\ChickenGame\Class Export\TestBuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\10798648\Documents\Summer2017\Final Project\Final Project\ChickenGame\Class Export\TestBuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\10798648\Documents\Summer2017\Final Project\Final Project\ChickenGame\Class Export\TestBuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\10798648\Documents\Summer2017\Final Project\Final Project\ChickenGame\Class Export\TestBuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\10798648\Documents\Summer2017\Final Project\Final Project\ChickenGame\Class Export\TestBuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.064 seconds
+Platform assembly: C:\Users\10798648\Documents\Summer2017\Final Project\Final Project\ChickenGame\Class Export\TestBuild_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\10798648\Documents\Summer2017\Final Project\Final Project\ChickenGame\Class Export\TestBuild_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Waiting for finish
