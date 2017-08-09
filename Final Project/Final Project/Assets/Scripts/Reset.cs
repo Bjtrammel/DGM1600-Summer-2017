@@ -18,4 +18,6 @@ public class Reset : MonoBehaviour
             transform.rotation = spawnPoint.rotation;
         }
     }
+
+    //Create Loop to populate the number from the array
 }
